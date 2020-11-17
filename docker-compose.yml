@@ -1,0 +1,12 @@
+# yaml 配置
+version: '3'  # 版本号
+services:
+  web:  # web服务
+    build: .  # 打包的目录
+    container_name: df_demo  # images的名字
+    ports:
+     - "5000:5000"  # 宿主:容器
+  redis:  # redis服务
+    image: "redis:alpine"
+
+
